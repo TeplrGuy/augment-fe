@@ -2,10 +2,9 @@ version: "3"
 
 services:
   front_end:
-    build: .
+    image: neostarteon/augment-fe
     ports:
-      - 3000:3000
-    volumes:
-      - .:/src
+      - 80:3000
     environment: 
+      - DEBUG=src:*
     
